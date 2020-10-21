@@ -262,14 +262,14 @@ button.billets {
     text-align: center;
 }
 
-#print-culture {
+.print-culture {
     font-family: var(--font-inter);
     font-size: 50px;
     font-weight: 200;
     font-style: italic;
     color: var(--color-ocher);
     transform: rotate(270deg);
-    margin-top: 14rem;
+    margin-top: 15rem;
     margin-left: -2rem;
 }
 
@@ -277,7 +277,7 @@ button.billets {
     font-family: var(--font-inter);
     font-size: 20px;
     color: #475569;
-    font-weight: lighter;
+    font-weight: 300;
     text-align: left;
     margin: 6rem;
     margin-left: -2rem;
@@ -292,4 +292,15 @@ button.billets {
     flex-direction: row;
     justify-content: left;
     align-items: flex-start;
+}
+
+.print-culture2 {
+    font-family: var(--font-inter);
+    font-size: 50px;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--color-ocher);
+    transform: rotate(270deg);
+    margin-top: 11rem;
+    margin-left: -2rem;
 }
