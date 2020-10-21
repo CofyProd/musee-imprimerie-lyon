@@ -262,7 +262,7 @@ button.billets {
     text-align: center;
 }
 
-.print-culture {
+#print-culture {
     font-family: var(--font-inter);
     font-size: 50px;
     font-weight: 200;
