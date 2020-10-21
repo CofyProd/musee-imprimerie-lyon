@@ -5,14 +5,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="./assets/css/tw.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div class="main-container">
       <h1 id="titre-main">Musée de l'Imprimerie</h1>
-      <hr id="divider-main">
+      <hr id="divider-main" />
       <span id="sub-main">Lyon</span>
     </div>
     <main>
@@ -44,17 +50,17 @@
         </div>
       </div>
       <div>
-        <h2>Coup d'oeil sur notre galerie</h2>
-        <div>
-          <img src="assets/images/gallerie d'images.jpg" alt="galerie d'images" />
+        <div class="wrapper">
+          <h2>Coup d'oeil sur notre galerie</h2>
         </div>
+        <img src="assets/images/gallerie d'images.jpg" alt="galerie d'images" class="image-galerie" />
       </div>
-      <div>
-        <div>
-          <div>
-            <div><span>35</span><span>Salles</span></div>
-            <div><span>35</span><span>Salles</span></div>
-            <div><span>35</span><span>Salles</span></div>
+      <div class="wrapper">
+        <div class="box">
+          <div class="box-flex">
+            <div><span class="box-numbers">35</span><span class="box-name">Salles</span></div>
+            <div><span class="box-numbers">35</span><span class="box-name">Salles</span></div>
+            <div><span class="box-numbers">35</span><span class="box-name">Salles</span></div>
           </div>
           <p>
             La richesse patrimoniale du musée lui a permis de se positionner comme l’un des plus importants d’Europe
@@ -62,37 +68,42 @@
           </p>
         </div>
       </div>
-      <div>
-        <div>
-          <img src="//via.placeholder.com/345x194" alt="" />
+      <div class="wrapper">
+        <h2>Les expositions temporaires</h2>
+        <div class="carroussel-item">
+          <img src="https://via.placeholder.com/345x194" alt="Vinyles" />
           <div>
-            <h3>L'Histoire de l'Imprimerie</h3>
-            <p>
+            <div class="title-carroussel-item">
+              <h3>L'Histoire de l'Imprimerie</h3>
+            </div>
+            <p class="body-carroussel-item">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               mollit anim id est laborum.
             </p>
-            <button>En savoir plus</button>
+            <button class="body-carroussel-item">En savoir plus</button>
           </div>
         </div>
       </div>
-      <hr />
-      <div>
+    </hr>
+      <div class="flex items-center justify-center w-full map">
         <img src="//via.placeholder.com/686x800" alt="" />
-        <div>
+        <div class="informations-pratiques">
           <h4>Informations pratiques</h4>
-          <hr />
-          <div>
-            <img src="//via.placeholder.com/48" alt="" />
-            <div>00 00 00 00 00</div>
+          <hr/>
+          <div class="flex flex-col">
+            <div class="flex items-center">
+              <img src="//via.placeholder.com/48" alt="" />
+              <div>00 00 00 00 00</div>
+            </div>
+            <div class="flex items-center mt-2">
+              <img src="//via.placeholder.com/48" alt="" />
+              <div>mil@lyon.fr</div>
+            </div>
           </div>
-          <div>
-            <img src="//via.placeholder.com/48" alt="" />
-            <div>mil@lyon.fr</div>
-          </div>
-          <h4>Horaire d'ouverture</h4>
+          <h4 >Horaire d'ouverture</h4>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis maiores illo accusamus pariatur saepe .
           </p>
