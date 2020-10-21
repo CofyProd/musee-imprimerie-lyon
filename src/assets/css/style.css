@@ -163,3 +163,21 @@ button.body-carroussel-item {
     font-size: 25px;
  font-weight: 500;   
 }
+
+.print-history {
+  font-family: var(--font-display);
+  color: white;
+  font-size: 155px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.print-culture {
+  font-family: var(--font-inter);
+  font-size: 50px;
+  font-weight: 300;
+  font-style: italic;
+
+}
