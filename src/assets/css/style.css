@@ -283,3 +283,15 @@ button.billets {
     justify-content: left;
     align-items: flex-start;
 }
+
+.card-box {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+  .card-box hr {
+    width: 60%;
+  }
+  .card-box hr:last-child {
+    width: 80%;
+  }
+  
