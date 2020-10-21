@@ -292,8 +292,22 @@ button.billets {
   padding-right: 112px;
 }
 .card-box hr {
-  width: 60%;
+  width: 40%;
 }
 .card-box hr:last-child {
-  width: 80%;
+  width: 60%;
+}
+
+.image-card-box {
+  width: 20vw;
+}
+
+@media (min-width: 1280px) {
+
+}
+
+@media (min-width: 640px) {
+  .image-card-box {
+    width: 48vw;
+  }
 }
