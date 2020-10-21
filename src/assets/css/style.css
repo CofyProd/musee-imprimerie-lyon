@@ -267,7 +267,7 @@ button.billets {
     font-family: var(--font-inter);
     font-size: 20px;
     color: #475569;
-    font-weight: lighter;
+    font-weight: 300;
     text-align: left;
     margin: 6rem;
     margin-left: -2rem;
