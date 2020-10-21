@@ -2,7 +2,7 @@
     --font-display: "Playfair Display", serif;
     --font-inter: "Inter", sans-serif;
     --color-brownie: #2c0c00;
-    --color-ocher: #CF6F4A;
+    --color-ocher: #cf6f4a;
 }
 
 h1 {
@@ -41,7 +41,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-h2 {
+.styleculture {
     font-family: var(--font-display);
     font-size: 32px;
     color: var(--color-brownie);
@@ -228,4 +228,58 @@ button.billets {
     font-size: 50px;
     font-weight: 300;
     font-style: italic;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.map h4 {
+    color: var(--color-ocher);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#print-history {
+    font-family: var(--font-display);
+    color: black;
+    font-size: 155px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#print-culture {
+    font-family: var(--font-inter);
+    font-size: 50px;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--color-ocher);
+    transform: rotate(270deg);
+    margin-top: 14rem;
+    margin-left: -2rem;
+}
+
+.paragraph {
+    font-family: var(--font-inter);
+    font-size: 20px;
+    color: #475569;
+    font-weight: lighter;
+    text-align: left;
+    margin: 6rem;
+    margin-left: -2rem;
+}
+
+.image-bandeau {
+    width: 100%;
+}
+
+.cultureimp {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
 }
