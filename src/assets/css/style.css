@@ -162,12 +162,15 @@ button.body-carroussel-item {
 .informations-pratiques {
     display: flex;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .center {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 h4 {
@@ -176,26 +179,32 @@ h4 {
     font-size: 2rem;
     color: var(--color-ocher);
     text-transform: initial;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .contact-tel-mail {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo-contact {
     display: flex;
     margin-bottom: 1.5rem;
-    align-items: center;
+    margin-right: 1rem;
+    justify-content: space-between;
+    ;
+}
+
+.taille {
+    width: 250px;
 }
 
 .informations-pratiques p {
     font-size: 1rem;
     font-family: var(--font-inter);
-    margin-left: 0.5rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 button.billets {
@@ -208,9 +217,10 @@ button.billets {
 }
 
 .informations-pratiques hr {
-    width: 50%;
-    height: 2px;
-    margin-bottom: 0.5rem;
+    width: 10%;
+    border-width: 0.5px;
+    border-color: black;
+    margin-bottom: 1.25rem;
 }
 
 .print-history {
