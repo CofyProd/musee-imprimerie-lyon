@@ -1,10 +1,3 @@
-:root {
-  --font-display: "Playfair Display", serif;
-  --font-inter: "Inter", sans-serif;
-  --color-brownie: #2c0c00;
-  --color-ocher: #cf6f4a;
-}
-
 body {
   font-family: var(--font-inter);
 }
