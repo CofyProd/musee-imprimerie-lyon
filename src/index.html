@@ -123,9 +123,9 @@
         </div>
       </div>
       <div>
-        <div class="relative w-full h-screen">
-          <div class="absolute inset-0 z-20 flex flex-row items-center justify-end w-full h-full">
-            <div class="flex flex-col items-center max-w-md p-8 mr-16 bg-white rounded-md shadow-md center">
+        <div class="relative w-full h-screen mt-8">
+          <div class="absolute inset-0 z-20 flex flex-row items-center justify-end w-full h-full pointer-events-none">
+            <div class="flex flex-col items-center max-w-md p-8 mr-16 bg-white rounded-md shadow-md pointer-events-auto center">
               <h4>Informations pratiques</h4>
               <hr />
               <div class="taille">
@@ -148,11 +148,7 @@
           </div>
           <div id="map" class="absolute w-full h-screen"></div>
         </div>
-        <div class="py-32 informations-pratiques">
-          <!-- <div>
-          
-        </div> -->
-        </div>
+        
       </div>
     </main>
     <footer class="flex justify-center w-full text-white bg-black text-footer">
@@ -258,8 +254,10 @@
         var map = new mapboxgl.Map({
           container: "map",
           style: "mapbox://styles/mattixnow/ckgki9qoc1a9519lscbnu7dm2",
-          center: [4.901132, 45.765576],
+          center: [4.867560946046069, 45.76766717991757],
+
           zoom: 12,
+          pitch: 53.000000000000014
         });
 
         map.scrollZoom.disable();
