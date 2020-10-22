@@ -2,6 +2,25 @@ body {
   font-family: var(--font-inter);
 }
 
+/* TODO : move these lines */
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+}
+
+#titre-main::after {
+  content: '_';
+  animation: cursor-blink .4s infinite
+}
+
+
 h1 {
   font-family: var(--font-display);
   color: white;
