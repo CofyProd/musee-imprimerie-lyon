@@ -491,3 +491,10 @@ button.billets {
   pointer-events: none;
   z-index: 10;  
 } 
+
+header.flex.font-playfair h2 {
+  font-size: 10vw;
+  width: 80%;
+  margin-left: 42px;
+  /* width: 13vw; */
+}

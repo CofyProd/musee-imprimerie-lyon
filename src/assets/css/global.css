@@ -13,6 +13,21 @@
 .font-playfair {
   font-family: var(--font-display);
 }
+
+
+.w-screen-1\/2 {
+  width: 50vw;
+}
+
+.left-screen-1\/2 {
+  left: 50vw;
+}
+.left-screen-1\/2-alt {
+  left: 49vw;
+}
+.-left-screen-1\/2-alt {
+  left: -49vw;
+}
 .bg-black-blur,
 .bg-white-blur {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
