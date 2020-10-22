@@ -3,7 +3,7 @@
   <head>
     <title>Musée de l'Imprimerie</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.5/tailwind.min.css" rel="stylesheet" />
 
     <link
@@ -13,6 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+    <style>
+      body { margin: 0; padding: 0; }
+      #map {  width: 100%; height:440px; }
+    </style>
   </head>
 
   <body>
@@ -94,7 +101,9 @@
         </div>
       </div>
       <div class="informations-pratiques">
-        <img src="//via.placeholder.com/686x800" alt="" />
+        <div class="relative w-full h-full">
+          <div id="map" class="w-full h-full"></div>
+        </div>
         <div class="center">
           <h4>Informations pratiques</h4>
           <hr />
@@ -214,6 +223,17 @@
       </div>
 
       <script src="./assets/js/title.js"></script>
+      <script>
+        mapboxgl.accessToken = "pk.eyJ1IjoibWF0dGl4bm93IiwiYSI6ImNqaTh1bXp1eDBxNTczcnBwd3NxaHZodmgifQ.Sv-Objycwyho76zqwN5PbQ";
+        var map = new mapboxgl.Map({
+          container: "map",
+          style: "mapbox://styles/mattixnow/ckgki9qoc1a9519lscbnu7dm2",
+          center: [45.756, 4.831],
+          zoom: 8,
+        });
+
+        var marker = new mapboxgl.Marker().setLngLat([45.756, 4.831]).addTo(map);
+      </script>
     </footer>
   </body>
 </html>

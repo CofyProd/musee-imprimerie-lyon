@@ -185,7 +185,7 @@ button.body-carroussel-item {
 
 .informations-pratiques {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -341,3 +341,5 @@ button.billets {
 
   right: -311px;
 }
+
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
