@@ -21,6 +21,16 @@ body {
 }
 
 
+#titre-main {
+  font-family: var(--font-display);
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
 #styleculture {
   font-family: var(--font-display);
   color: white;

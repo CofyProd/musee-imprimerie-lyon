@@ -13,3 +13,4 @@ function fillTitle (index) {
         title.textContent = titleText.substr(0, index);
     }, delay * index);
 }
+
