@@ -22,6 +22,7 @@ body {
 
 
 #titre-main {
+  text-align: center;
   font-family: var(--font-display);
   color: white;
   font-size: 70px;
