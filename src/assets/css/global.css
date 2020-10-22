@@ -1,0 +1,18 @@
+:root {
+  --font-display: "Playfair Display", serif;
+  --font-inter: "Inter", sans-serif;
+  --color-brownie: #2c0c00;
+  --color-ocher: #cf6f4a;
+}
+
+.font-playfair {
+  font-family: var(--font-display);
+}
+.bg-black-blur,
+.bg-white-blur {
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.bg-gray-grad {
+  background: linear-gradient(180deg, #848484 0.1%, #2e2e2e 100%);
+}

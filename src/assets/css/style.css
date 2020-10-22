@@ -1,8 +1,5 @@
-:root {
-  --font-display: "Playfair Display", serif;
-  --font-inter: "Inter", sans-serif;
-  --color-brownie: #2c0c00;
-  --color-ocher: #cf6f4a;
+body {
+  font-family: var(--font-inter);
 }
 
 h1 {
@@ -18,7 +15,7 @@ h1 {
 .main-container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   justify-content: center;
   margin-bottom: 45px;
@@ -64,17 +61,14 @@ h1 {
 .title-carroussel-item {
   font-family: var(--font-inter);
   font-size: 1.25rem;
-  margin-bottom: 1.125rem;
   font-weight: 600;
   text-align: left;
-  margin-left: 1rem;
 }
 
 .body-carroussel-item {
   font-family: var(--font-inter);
   font-size: 1rem;
   text-align: left;
-  margin-left: 1rem;
 }
 
 .carroussel-item {
@@ -162,12 +156,15 @@ button.body-carroussel-item {
 .informations-pratiques {
   display: flex;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .center {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 h4 {
@@ -176,26 +173,31 @@ h4 {
   font-size: 2rem;
   color: var(--color-ocher);
   text-transform: initial;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact-tel-mail {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .logo-contact {
   display: flex;
   margin-bottom: 1.5rem;
-  align-items: center;
+  margin-right: 1rem;
+  justify-content: space-between;
+}
+
+.taille {
+  width: 250px;
 }
 
 .informations-pratiques p {
   font-size: 1rem;
   font-family: var(--font-inter);
-  margin-left: 0.5rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 button.billets {
@@ -208,9 +210,10 @@ button.billets {
 }
 
 .informations-pratiques hr {
-  width: 50%;
-  height: 2px;
-  margin-bottom: 0.5rem;
+  width: 10%;
+  border-width: 0.5px;
+  border-color: black;
+  margin-bottom: 1.25rem;
 }
 
 .print-history {
@@ -226,12 +229,13 @@ button.billets {
 .print-culture {
   font-family: var(--font-inter);
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 200;
   font-style: italic;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+  color: var(--color-ocher);
+  transform: rotate(270deg);
+  align-self: center;
+
+  margin-left: -2rem;
 }
 
 .map h4 {
@@ -252,24 +256,13 @@ button.billets {
   text-align: center;
 }
 
-.print-culture {
-  font-family: var(--font-inter);
-  font-size: 50px;
-  font-weight: 200;
-  font-style: italic;
-  color: var(--color-ocher);
-  transform: rotate(270deg);
-  margin-top: 15rem;
-  margin-left: -2rem;
-}
-
 .paragraph {
   font-family: var(--font-inter);
   font-size: 20px;
   color: #475569;
   font-weight: 300;
   text-align: left;
-  margin: 6rem;
+  margin-right: 6rem;
   margin-left: -2rem;
 }
 
@@ -282,20 +275,34 @@ button.billets {
   flex-direction: row;
   justify-content: left;
   align-items: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-
-.print-culture2 {
-    font-family: var(--font-inter);
-    font-size: 50px;
-    font-weight: 200;
-    font-style: italic;
-    color: var(--color-ocher);
-    transform: rotate(270deg);
-    margin-top: 11rem;
-    margin-left: -2rem;
-  }
 
   .text-footer{
     font-family: var(--font-inter);
     font-size: 1.25rem;
   }
+.card-box {
+  padding-left: 112px;
+  padding-right: 112px;
+}
+.card-box hr {
+  width: 40%;
+}
+.card-box hr:last-child {
+  width: 60%;
+}
+
+.image-card-box {
+  width: 20vw;
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 640px) {
+  .image-card-box {
+    width: 48vw;
+  }
+}
