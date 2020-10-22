@@ -57,7 +57,7 @@ body {
   position: relative;
   width: 100%;
   height: 3px;
-  background: var(--color-ocher);
+  background: var(--var-color-burger);
   z-index: 5;
   transition: all 0.2s linear;
 }
@@ -69,7 +69,7 @@ body {
   top: -10px;
   width: 100%;
   height: 3px;
-  background: var(--color-ocher);
+  background: var(--var-color-burger);
   transition: all 0.2s linear;
 }
 
