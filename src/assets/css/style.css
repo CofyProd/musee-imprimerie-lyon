@@ -136,10 +136,9 @@ body {
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 275ms ease;
+  transition: background-position 275ms ease, font-size 250ms;
 }
 .li-menu:hover {
-  transition: 100ms;
   font-size: 2.2rem;
   background-position: 0 100%;
 }
@@ -181,7 +180,6 @@ body {
   width: 100%;
   height: 100vh;
   justify-content: center;
-  margin-bottom: 45px;
   align-items: center;
   background-color: black;
 }
