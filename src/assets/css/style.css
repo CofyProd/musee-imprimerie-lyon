@@ -294,3 +294,8 @@ button.billets {
     margin-top: 11rem;
     margin-left: -2rem;
   }
+
+  .text-footer{
+    font-family: var(--font-inter);
+    font-size: 1.25rem;
+  }
