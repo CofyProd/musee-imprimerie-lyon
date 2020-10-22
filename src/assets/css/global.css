@@ -5,6 +5,10 @@
   --color-ocher: #cf6f4a;
 }
 
+.text-brownie {
+  color: var(--color-brownie);
+}
+
 .font-playfair {
   font-family: var(--font-display);
 }
