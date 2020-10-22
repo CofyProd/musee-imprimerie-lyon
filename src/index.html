@@ -23,7 +23,11 @@
       }
       #map {
         width: 100%;
+<<<<<<< HEAD
         height: 440px;
+=======
+        /* height: 547px; */
+>>>>>>> b6a4977c73c54e1dac369d6c4b7adf939306d22c
       }
     </style>
   </head>
@@ -50,7 +54,7 @@
       <hr class="z-10" id="divider-main" />
       <span class="z-10" id="sub-main">Lyon</span>
 
-      <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay loop muted playsinline class="absolute z-0 object-cover w-full h-full"></video>
+      <video src="./assets/images/output.webm" autoplay loop muted playsinline class="absolute z-0 object-cover w-full h-full"></video>
     </header>
     <main>
       <div class="wrapper">
@@ -122,37 +126,33 @@
           </div>
         </div>
       </div>
-      <div class="informations-pratiques">
-        <div class="relative w-full h-full">
-          <div id="map" class="w-full h-full"></div>
-        </div>
-        <div class="center">
-          <h4>Informations pratiques</h4>
-          <hr />
-          <div class="taille">
-            <div class="contact-tel-mail logo-contact informations-pratiques">
-              <lottie-player
-                src="https://assets4.lottiefiles.com/private_files/lf30_hsiniuem.json"
-                background="transparent"
-                speed="0.75"
-                style="width: 48px; height: 48px"
-                hover
-                loop
-              ></lottie-player>
-              <p class="style-p">04 78 37 65 98</p>
-            </div>
-            <div class="contact-tel-mail logo-contact">
-              <img src="//via.placeholder.com/48" alt="" />
-              <p class="style-p">mil@mairie-lyon.fr</p>
+      <div>
+        <div class="relative w-full h-screen mt-8">
+          <div class="absolute inset-0 z-20 flex flex-row items-center justify-end w-full h-full pointer-events-none">
+            <div class="flex flex-col items-center max-w-md p-8 mr-16 bg-white rounded-md shadow-md pointer-events-auto center">
+              <h4>Informations pratiques</h4>
+              <hr />
+              <div class="taille">
+                <div class="contact-tel-mail logo-contact informations-pratiques">
+                  <img src="//via.placeholder.com/48" alt="" />
+                  <p class="style-p">04 78 37 65 98</p>
+                </div>
+                <div class="contact-tel-mail logo-contact">
+                  <img src="//via.placeholder.com/48" alt="" />
+                  <p class="style-p">mil@mairie-lyon.fr</p>
+                </div>
+              </div>
+              <hr class="hr" />
+              <h4>Horaire d'ouverture</h4>
+              <hr class="hr"/>
+              <p>Mercredi au dimanche, 10h30 à 18h (fermeture de la billetterie à 17h30)</p>
+              <p>Fermé le lundi et 1er janvier, 1er mai, 1er novembre, 25 décembre</p>
+              <button class="billets">Je réserve mes billets</button>
             </div>
           </div>
-          <hr />
-          <h4>Horaire d'ouverture</h4>
-          <hr />
-          <p>Mercredi au dimanche, 10h30 à 18h (fermeture de la billetterie à 17h30)</p>
-          <p>Fermé le lundi et 1er janvier, 1er mai, 1er novembre, 25 décembre</p>
-          <button class="billets">Je réserve mes billets</button>
+          <div id="map" class="absolute w-full h-screen"></div>
         </div>
+        
       </div>
     </main>
     <footer class="z-50 flex justify-center w-full bg-black text-footer" style="box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.05)">
@@ -217,15 +217,15 @@
         <div class="flex justify-between my-10">
           <div class="flex justify-between" style="width: 60vw">
             <div class="w-1 h-1 rounded-full" style="margin-top: 0.7rem; background-color: #cf6f4a"></div>
-            <a href="#top">Retourner en Haut</a>
+            <a href="">Retourner en Haut</a>
             <div class="w-1 h-1 rounded-full" style="margin-top: 0.7rem; background-color: #cf6f4a"></div>
-            <a href="#expo">Les Expositions</a>
+            <a href="">Les Expositions</a>
             <div class="w-1 h-1 rounded-full" style="margin-top: 0.7rem; background-color: #cf6f4a"></div>
-            <a href="#galerie">Galerie</a>
+            <a href="">Galerie</a>
             <div class="w-1 h-1 rounded-full" style="margin-top: 0.7rem; background-color: #cf6f4a"></div>
-            <a href="#histoire">Histoire de l'Imprimerie</a>
+            <a href="">Histoire de l'Imprimerie</a>
             <div class="w-1 h-1 rounded-full" style="margin-top: 0.7rem; background-color: #cf6f4a"></div>
-            <a href="">Plan du Site</a>
+            <a href="./histoire.html">Plan du Site</a>
             <div class="w-1 h-1 rounded-full" style="margin-top: 0.7rem; background-color: #cf6f4a"></div>
           </div>
           <div class="flex justify-between w-32 mr-12">
@@ -252,6 +252,7 @@
           </div>
         </div>
       </div>
+    </footer>
 
       <script src="./assets/js/title.js"></script>
       <script>
@@ -259,12 +260,15 @@
         var map = new mapboxgl.Map({
           container: "map",
           style: "mapbox://styles/mattixnow/ckgki9qoc1a9519lscbnu7dm2",
-          center: [45.756, 4.831],
-          zoom: 8,
+          center: [4.867560946046069, 45.76766717991757],
+
+          zoom: 12,
+          pitch: 53.000000000000014
         });
 
-        var marker = new mapboxgl.Marker().setLngLat([45.756, 4.831]).addTo(map);
+        map.scrollZoom.disable();
+
+        var marker = new mapboxgl.Marker().setLngLat([4.834687, 45.764263]).addTo(map);
       </script>
-    </footer>
   </body>
 </html>
