@@ -2,7 +2,7 @@ body {
   font-family: var(--font-inter);
 }
 
-h1 {
+.styleculture {
   font-family: var(--font-display);
   color: white;
   font-size: 70px;
