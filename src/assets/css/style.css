@@ -372,8 +372,8 @@ button.billets {
   font-weight: 500;
 }
 
-.informations-pratiques hr {
-  width: 10%;
+.hr {
+  width: 40%;
   border-width: 0.5px;
   border-color: black;
   margin-bottom: 1.25rem;
@@ -474,4 +474,21 @@ button.billets {
   right: -311px;
 }
 
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#map { position: relative; top: 0; bottom: 0; width: 100%; }
+#map * {
+  outline: none;
+}
+#map::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(0deg, #FFFFFF 1.46%, rgba(255, 255, 255, 0) 12.55%), linear-gradient(89.16deg, #FFFFFF 2.23%, rgba(255, 255, 255, 0) 12.21%), linear-gradient(258.29deg, #FFFFFF 7.29%, rgba(255, 255, 255, 0) 27.31%), linear-gradient(187.09deg, #FFFFFF 5.53%, rgba(255, 255, 255, 0) 23.12%), linear-gradient(340.5deg, #FFFFFF 8.61%, rgba(255, 255, 255, 0) 27.82%), linear-gradient(151.77deg, #FFFFFF 17.64%, rgba(255, 255, 255, 0) 31.18%);
+  user-select: none;
+  pointer-events: none;
+  z-index: 10;  
+} 
