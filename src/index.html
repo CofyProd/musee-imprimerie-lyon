@@ -23,11 +23,7 @@
       }
       #map {
         width: 100%;
-<<<<<<< HEAD
-        height: 440px;
-=======
         /* height: 547px; */
->>>>>>> b6a4977c73c54e1dac369d6c4b7adf939306d22c
       }
     </style>
   </head>
@@ -144,7 +140,7 @@
               </div>
               <hr class="hr" />
               <h4>Horaire d'ouverture</h4>
-              <hr class="hr"/>
+              <hr class="hr" />
               <p>Mercredi au dimanche, 10h30 à 18h (fermeture de la billetterie à 17h30)</p>
               <p>Fermé le lundi et 1er janvier, 1er mai, 1er novembre, 25 décembre</p>
               <button class="billets">Je réserve mes billets</button>
@@ -152,7 +148,6 @@
           </div>
           <div id="map" class="absolute w-full h-screen"></div>
         </div>
-        
       </div>
     </main>
     <footer class="z-50 flex justify-center w-full bg-black text-footer" style="box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.05)">
@@ -206,11 +201,9 @@
               </ul>
             </div>
           </div>
-          <div class="flex items-end" style="margin-bottom: -0.75rem">
-            <a href="https://www.lyon.fr/" target="_blank">
-              <img src="assets/images/VDL-monochrome-noir.svg" alt="logo ville de Lyon" style="max-height: 8rem; margin-right: 3rem; margin-top: 16px"
-            /></a>
-            <img src="assets/images/cofy prod logo.gif" alt="logo CofyProd" style="max-height: 8rem; margin-bottom: 16px" />
+          <div class="flex items-end " style="margin-bottom: 7px">
+            <img src="assets/images/VDL-monochrome-noir.svg" alt="logo ville de Lyon" style="margin-right: 2rem;"/>
+            <img src="assets/images/cofy prod logo.gif" alt="logo CofyProd" style="max-height: 8rem; margin-right: 20rem;" />
           </div>
         </div>
         <hr class="mt-10 border-white border-1" />
@@ -254,21 +247,21 @@
       </div>
     </footer>
 
-      <script src="./assets/js/title.js"></script>
-      <script>
-        mapboxgl.accessToken = "pk.eyJ1IjoibWF0dGl4bm93IiwiYSI6ImNqaTh1bXp1eDBxNTczcnBwd3NxaHZodmgifQ.Sv-Objycwyho76zqwN5PbQ";
-        var map = new mapboxgl.Map({
-          container: "map",
-          style: "mapbox://styles/mattixnow/ckgki9qoc1a9519lscbnu7dm2",
-          center: [4.867560946046069, 45.76766717991757],
+    <script src="./assets/js/title.js"></script>
+    <script>
+      mapboxgl.accessToken = "pk.eyJ1IjoibWF0dGl4bm93IiwiYSI6ImNqaTh1bXp1eDBxNTczcnBwd3NxaHZodmgifQ.Sv-Objycwyho76zqwN5PbQ";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mattixnow/ckgki9qoc1a9519lscbnu7dm2",
+        center: [4.867560946046069, 45.76766717991757],
 
-          zoom: 12,
-          pitch: 53.000000000000014
-        });
+        zoom: 12,
+        pitch: 53.000000000000014,
+      });
 
-        map.scrollZoom.disable();
+      map.scrollZoom.disable();
 
-        var marker = new mapboxgl.Marker().setLngLat([4.834687, 45.764263]).addTo(map);
-      </script>
+      var marker = new mapboxgl.Marker().setLngLat([4.834687, 45.764263]).addTo(map);
+    </script>
   </body>
 </html>
