@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
     <style>
@@ -23,13 +23,17 @@
       }
       #map {
         width: 100%;
+<<<<<<< HEAD
+        height: 440px;
+=======
         /* height: 547px; */
+>>>>>>> b6a4977c73c54e1dac369d6c4b7adf939306d22c
       }
     </style>
   </head>
 
   <body>
-    <header class="relative main-container">
+    <header class="relative main-container" id="top">
       <div class="menu-wrapper">
         <input type="checkbox" class="toggle" />
 
@@ -39,7 +43,7 @@
 
         <div class="menu">
           <ul>
-            <li class="li-menu">L'Histoire de l'Imprimerie</li>
+            <li class="li-menu"><a href="histoire.html"> L'Histoire de l'Imprimerie</a></li>
             <li class="li-menu">Le Musée</li>
             <li class="li-menu">Les Expositions</li>
             <li class="li-menu">Informations Pratiques</li>
@@ -54,9 +58,9 @@
     </header>
     <main>
       <div class="wrapper">
-        <h2 class="styleculture">Les expositions temporaires</h2>
+        <h2 class="styleculture" id="expo">Les expositions temporaires</h2>
         <div class="carroussel-item">
-          <img src="https://via.placeholder.com/338x190" alt="Vinyles" />
+          <img src="assets/images/vinyle-mania.jpg" alt="Vinyles" />
           <div class="ml-4">
             <div class="title-carroussel-item">VinylesMania : les faces A et B d’une reconquête musicale</div>
             <p class="body-carroussel-item">
@@ -67,7 +71,7 @@
           </div>
         </div>
         <div class="carroussel-item">
-          <img src="https://via.placeholder.com/338x190" alt="Vinyles" />
+          <img src="assets/images/vinyle-mania2.jpeg" alt="Vinyles" />
           <div class="ml-4">
             <div class="title-carroussel-item">VinylesMania : les faces A et B d’une reconquête musicale</div>
             <p class="body-carroussel-item">
@@ -80,7 +84,7 @@
       </div>
       <div>
         <div class="wrapper">
-          <h2 class="styleculture">Coup d'oeil sur notre galerie</h2>
+          <h2 class="styleculture" id="galerie">Coup d'oeil sur notre galerie</h2>
         </div>
         <img src="assets/images/gallerie d'images.jpg" alt="galerie d'images" class="image-galerie" />
       </div>
@@ -105,10 +109,10 @@
           </div>
         </div>
       </div>
-      <div class="wrapper">
+      <div id="histoire" class="wrapper">
         <h2 class="styleculture">Les expositions temporaires</h2>
         <div class="carroussel-item">
-          <img src="https://via.placeholder.com/345x194" alt="Vinyles" />
+          <img src="assets/images/histoire.jpg" alt="machine à écrire" />
           <div class="ml-4">
             <div class="absolute title-carroussel-item text">
               <h3 class="font-playfair">L'Histoire de l'Imprimerie</h3>
@@ -151,42 +155,46 @@
         
       </div>
     </main>
-    <footer class="flex justify-center w-full text-white bg-black text-footer">
+    <footer class="z-50 flex justify-center w-full bg-black text-footer" style="box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.05)">
       <div class="w-4/5">
         <div class="flex justify-between">
           <div>
             <div class="flex justify-between mt-10 mb-10" style="width: 24rem">
               <img src="assets/images/Logo imprimerie ocre.svg" alt="Logo Musée de l'imprimerie" />
               <div class="flex flex-col justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="230" height="127" viewBox="0 0 200 97">
-                  <g id="Groupe_115" data-name="Groupe 115" transform="translate(-281 -2486)">
-                    <text
-                      id="MUSÉE_DE_L_IMPRIMERIE"
-                      data-name="MUSÉE DE
+                <a href="#top"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="230" height="127" viewBox="0 0 200 97">
+                    <g id="Groupe_115" data-name="Groupe 115" transform="translate(-281 -2486)">
+                      <text
+                        id="MUSÉE_DE_L_IMPRIMERIE"
+                        data-name="MUSÉE DE
               L'IMPRIMERIE"
-                      transform="translate(381 2516)"
-                      fill="#f2f2f2"
-                      font-size="32"
-                      font-family="Roboto-Bold, Roboto"
-                      font-weight="700"
-                    >
-                      <tspan x="-75.766" y="0">MUSÉE DE</tspan>
-                      <tspan x="-99.766" y="30">L&apos;IMPRIMERIE</tspan>
-                    </text>
-                    <text id="LYON" transform="translate(334 2563)" fill="#f2f2f2" font-size="15" font-family="Playfair Display" font-weight="700">
-                      <tspan x="23.79" y="16">LYON</tspan>
-                    </text>
-                    <line id="Ligne_37" data-name="Ligne 37" x2="16" transform="translate(369.362 2558.315)" fill="none" stroke="#cf6f4a" stroke-width="1" />
-                  </g>
-                </svg>
+                        transform="translate(381 2516)"
+                        fill="#f2f2f2"
+                        font-size="32"
+                        font-family="Roboto-Bold, Roboto"
+                        font-weight="700"
+                      >
+                        <tspan x="-75.766" y="0">MUSÉE DE</tspan>
+                        <tspan x="-99.766" y="30">L&apos;IMPRIMERIE</tspan>
+                      </text>
+                      <text id="LYON" transform="translate(334 2563)" fill="#f2f2f2" font-size="15" font-family="Playfair Display" font-weight="700">
+                        <tspan x="23.79" y="16">LYON</tspan>
+                      </text>
+                      <line id="Ligne_37" data-name="Ligne 37" x2="16" transform="translate(369.362 2558.315)" fill="none" stroke="#cf6f4a" stroke-width="1" />
+                    </g>
+                  </svg>
+                </a>
               </div>
             </div>
             <div>
               <ul class="flex flex-col row-gap-2">
-                <div class="flex">
-                  <div class="w-1 h-1 mr-3 rounded-full" style="margin-top: 0.7rem; background-color: #cf6f4a"></div>
-                  <li>L'Histoire de l'Imprimerie</li>
-                </div>
+                <a href="histoire.html"
+                  ><div class="flex">
+                    <div class="w-1 h-1 mr-3 rounded-full" style="margin-top: 0.7rem; background-color: #cf6f4a"></div>
+                    <li>L'Histoire de l'Imprimerie</li>
+                  </div>
+                </a>
                 <div class="flex">
                   <div class="w-1 h-1 mr-3 rounded-full" style="margin-top: 0.7rem; background-color: #cf6f4a"></div>
                   <li>Le Musée</li>
@@ -199,11 +207,9 @@
             </div>
           </div>
           <div class="flex items-end" style="margin-bottom: -0.75rem">
-            <img
-              src="data:image/png;base64,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"
-              alt="logo ville de Lyon"
-              style="max-height: 8rem; margin-right: 3rem; margin-top: 16px"
-            />
+            <a href="https://www.lyon.fr/" target="_blank">
+              <img src="assets/images/VDL-monochrome-noir.svg" alt="logo ville de Lyon" style="max-height: 8rem; margin-right: 3rem; margin-top: 16px"
+            /></a>
             <img src="assets/images/cofy prod logo.gif" alt="logo CofyProd" style="max-height: 8rem; margin-bottom: 16px" />
           </div>
         </div>

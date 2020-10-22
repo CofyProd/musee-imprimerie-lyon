@@ -445,6 +445,7 @@ button.billets {
 .text-footer {
   font-family: var(--font-inter);
   font-size: 1rem;
+  color: #EDF2F7;
 }
 .card-box {
   padding-left: 112px;
