@@ -2,7 +2,26 @@ body {
   font-family: var(--font-inter);
 }
 
-.styleculture {
+/* TODO : move these lines */
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+}
+
+#titre-main::after {
+  content: '_';
+  animation: cursor-blink .4s infinite
+}
+
+
+#styleculture {
   font-family: var(--font-display);
   color: white;
   font-size: 70px;
@@ -279,6 +298,10 @@ button.billets {
   margin-bottom: 2rem;
 }
 
+  .text-footer{
+    font-family: var(--font-inter);
+    font-size: 1.25rem;
+  }
 .card-box {
   padding-left: 112px;
   padding-right: 112px;
