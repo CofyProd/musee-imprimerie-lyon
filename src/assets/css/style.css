@@ -229,12 +229,13 @@ button.billets {
 .print-culture {
   font-family: var(--font-inter);
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 200;
   font-style: italic;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+  color: var(--color-ocher);
+  transform: rotate(270deg);
+  align-self: center;
+
+  margin-left: -2rem;
 }
 
 .map h4 {
@@ -255,24 +256,13 @@ button.billets {
   text-align: center;
 }
 
-#print-culture {
-  font-family: var(--font-inter);
-  font-size: 50px;
-  font-weight: 200;
-  font-style: italic;
-  color: var(--color-ocher);
-  transform: rotate(270deg);
-  margin-top: 15rem;
-  margin-left: -2rem;
-}
-
 .paragraph {
   font-family: var(--font-inter);
   font-size: 20px;
   color: #475569;
   font-weight: 300;
   text-align: left;
-  margin: 6rem;
+  margin-right: 6rem;
   margin-left: -2rem;
 }
 
@@ -285,6 +275,8 @@ button.billets {
   flex-direction: row;
   justify-content: left;
   align-items: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .card-box {
