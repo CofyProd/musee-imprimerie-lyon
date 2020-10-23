@@ -17,5 +17,8 @@
   },
   "prettier": {
     "printWidth": 180
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
