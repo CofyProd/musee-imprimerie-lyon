@@ -1,9 +1,8 @@
 body#histoire-page {
   font-family: var(--font-inter);
-  background-image: url('../images/creampaper.png');
+  background-image: url("../images/creampaper.png");
   background-repeat: repeat;
 }
-
 
 /* TODO : move these lines */
 @keyframes cursor-blink {
@@ -100,7 +99,6 @@ body#histoire-page {
   transform: rotate(90deg);
 }
 
-
 .menu {
   position: fixed;
   top: 0;
@@ -118,7 +116,7 @@ body#histoire-page {
   align-items: center;
 }
 
-.menu ul { 
+.menu ul {
   white-space: nowrap;
   color: #f3f3f3;
   font-size: 2rem;
@@ -162,14 +160,12 @@ body#histoire-page {
   font-family: var(--font-display);
   color: white;
   font-size: 56px;
-  
+
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
-
-
 
 .main-container {
   display: flex;
@@ -208,7 +204,7 @@ body#histoire-page {
   padding: 10px 16px;
   text-transform: uppercase;
   margin-bottom: 36px;
-  box-shadow: 0px 2px 13px -3px rgb(0 0 0 / 10%), 0 4px 9px -2px rgba(0,0,0,.05);  
+  box-shadow: 0px 2px 13px -3px rgb(0 0 0 / 10%), 0 4px 9px -2px rgba(0, 0, 0, 0.05);
 }
 
 .wrapper {
@@ -442,7 +438,7 @@ button.billets {
 .text-footer {
   font-family: var(--font-inter);
   font-size: 1rem;
-  color: #EDF2F7;
+  color: #edf2f7;
 }
 .card-box {
   padding-left: 112px;
@@ -459,7 +455,6 @@ button.billets {
   width: 20vw;
 }
 
-
 @media (min-width: 640px) {
   .image-card-box {
     width: 48vw;
@@ -467,20 +462,29 @@ button.billets {
   #titre-main {
     font-size: 70px;
   }
+  #box-card-grad-2 {
+    right: -85px;
+  }
+  
 }
 
 @media (min-width: 1024px) {
+  #box-card-grad-2 {
+    right: -311px;
+  }
 }
 
 @media (min-width: 1280px) {
 }
 
 
-#box-card-grad-2 {
-  right: -311px;
-}
 
-#map { position: relative; top: 0; bottom: 0; width: 100%; }
+#map {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
 #map * {
   outline: none;
 }
@@ -493,11 +497,13 @@ button.billets {
   left: 0;
   width: 100%;
   height: 100%;
-  background:linear-gradient(0deg, #FFFFFF 1.46%, rgba(255, 255, 255, 0) 12.55%), linear-gradient(89.16deg, #FFFFFF 2.23%, rgba(255, 255, 255, 0) 12.21%), linear-gradient(258.29deg, #FFFFFF 7.29%, rgba(255, 255, 255, 0) 27.31%), linear-gradient(187.09deg, #FFFFFF 5.53%, rgba(255, 255, 255, 0) 23.12%), linear-gradient(340.5deg, #FFFFFF 8.61%, rgba(255, 255, 255, 0) 27.82%), linear-gradient(151.77deg, #FFFFFF 17.64%, rgba(255, 255, 255, 0) 31.18%);
+  background: linear-gradient(0deg, #ffffff 1.46%, rgba(255, 255, 255, 0) 12.55%), linear-gradient(89.16deg, #ffffff 2.23%, rgba(255, 255, 255, 0) 12.21%),
+    linear-gradient(258.29deg, #ffffff 7.29%, rgba(255, 255, 255, 0) 27.31%), linear-gradient(187.09deg, #ffffff 5.53%, rgba(255, 255, 255, 0) 23.12%),
+    linear-gradient(340.5deg, #ffffff 8.61%, rgba(255, 255, 255, 0) 27.82%), linear-gradient(151.77deg, #ffffff 17.64%, rgba(255, 255, 255, 0) 31.18%);
   user-select: none;
   pointer-events: none;
-  z-index: 10;  
-} 
+  z-index: 10;
+}
 
 header.flex.font-playfair h2 {
   font-size: 12.5vw;
@@ -505,7 +511,6 @@ header.flex.font-playfair h2 {
   margin-left: 4vw;
   /* width: 13vw;*/
 }
-
 
 [data-animate="fade-up"] {
   -webkit-animation-name: fadeInUp;
