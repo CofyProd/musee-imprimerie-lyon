@@ -311,8 +311,24 @@
       });
 
       map.scrollZoom.disable();
+      var popup = new mapboxgl.Popup({ closeOnClick: false, maxWidth:"240px",className: "yo-pop-up",offset:42 }).setLngLat([4.834687, 45.764263]).setHTML(`<a href="https://goo.gl/maps/ErWnJzGwHefhvm8u7" target="_blank" class="inline-flex flex-col items-center justify-center w-full px-3 py-2 space-y-3 bg-white rounded-lg shadow"><p class="w-full text-lg font-semibold leading-tight">Musée de l'imprimerie et de la communication graphique </p><p class="self-start text-xs leading-3 text-gray-700">13 Rue de la Poulaillerie, 69002 Lyon</p></a>`).addTo(map);
 
       var marker = new mapboxgl.Marker().setLngLat([4.834687, 45.764263]).addTo(map);
     </script>
+    <style>
+      .yo-pop-up .mapboxgl-popup-content {
+    position: initial;
+    background: initial;
+    border-radius: initial;
+    box-shadow: initial;
+    padding: initial;
+    pointer-events: initial;
+    font-family: var(--font-inter);
+}
+
+.mapboxgl-popup-tip {
+  display: none;
+}
+    </style>
   </body>
 </html>
