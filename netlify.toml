@@ -3,4 +3,4 @@
   publish = "dist"
 
   # Default build command.
-  command = "yarn prod"
+  command = "npm run prod"
