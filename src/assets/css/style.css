@@ -1,4 +1,4 @@
-body {
+body#histoire-page {
   font-family: var(--font-inter);
   background-image: url('../images/creampaper.png');
   background-repeat: repeat;
